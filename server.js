@@ -1,10 +1,7 @@
-const express = require('express');
-const xml2js = require('xml2js');
-const app = express();
 
+const app = require('./app');
 const PORT = 9090;
+const http = require('http');
 
-
-app.listen(PORT, () => {
-    console.log('Listening on port 9090');
-})
+const server = http.createServer(app);
+server.listen(PORT, (console.log(`Listening on PORT ${PORT}`)))
