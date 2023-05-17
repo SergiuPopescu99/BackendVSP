@@ -1,12 +1,12 @@
 const { google } = require('googleapis');
 const { drive } = require('googleapis/build/src/apis/drive');
 
-const CLIENT_ID = '47597718485-5dtf947249a7gembc7pefuvninv4asie.apps.googleusercontent.com';
-const CLIENT_SECRET = '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';
-const REDIRECT_URI = 'https://developers.google.com/oauthplayground';
+const CLIENT_ID = '';
+const CLIENT_SECRET = '';
+const REDIRECT_URI = '';
 
 
-const REFRESH_TOKEN = '1//04xmVSIU23f6YCgYIARAAGAQSNwF-L9IraDWQuoTYeUJ_wU_xp3m9xSCYS4zyr3qTMCAqX5RQLnZinlPyzr5rIEIfVQg7waFxor8'
+const REFRESH_TOKEN = ''
 
 const oauth2Client = new google.auth.OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI);
 oauth2Client.setCredentials({ refresh_token: REFRESH_TOKEN })
